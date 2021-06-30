@@ -14,3 +14,6 @@ Then, the dc motors and the pumps are controlled accordingly.
 
 ## Resources
 The nRF code by [**How To Mechatronics**](https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/) was very helpful in order to understand and use the nRF modules.
+
+## Finished Project Link
+[**Youtube Link**](https://www.youtube.com/watch?v=fF1-DkRU6WY)
