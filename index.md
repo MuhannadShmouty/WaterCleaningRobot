@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# Water Cleaning Robot _(Protentum)_
+Water Cleaning Robot "Protentus" is a robot that floats on the water of rivers, loads the rubbish onto its body and return to the shore to get the rubbish collected.
+It can controlled by an Flysky RC which communicates by PPM communication protocol or through nRF RC and nRF communication protocol.
 
-You can use the [editor on GitHub](https://github.com/MuhannadShmouty/water_cleaning_robot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Project details
+The robot body consists of 2 dc motors that control the loader bucket, 2 water pumps to control the robot motion and speed in water.
+It also has a flashlight and an ESP-32 WI-FI camera.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Code breakdown
+The logic starts by checking whether the FlySky reciever is connecter or the nRF module is connected, upon which the communication control is chosen.
+For PPM communication, pin change interrupt is used in order to count the high time for each channel from the 6 channels, which is then represents data.
+For nRF communication, the nRF module is configured to recieve data from the transmitting nRF.
+Then, the dc motors and the pumps are controlled accordingly.
 
-### Markdown
+## Resources
+The nRF code by [**How To Mechatronics**](https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/) was very helpful in order to understand and use the nRF modules.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MuhannadShmouty/water_cleaning_robot/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Finished Project Link
+[**Youtube Link**](https://www.youtube.com/watch?v=fF1-DkRU6WY)
